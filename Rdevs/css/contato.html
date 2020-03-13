@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="contato.css" rel="stylesheet">
+
+    <title>Formulário de contato</title>
+</head>
+<body>
+
+    <h1>Formulário de contato</h1>
+    <form>
+        <label>Nome</label>
+        <input type="text" name="nome" value="" required/>
+        <label>Sobrenome</label>
+        <input type="text" name="sobrenome" value="" required/><p></p>
+        <label>E-mail</label>
+        <input type="email" placeholder="usuario@gmail.com"/><p></p>
+        <label>Assunto da mensagem</label>
+        <select name="Assunto">
+            <option value="Duvidas">Duvidas</option>
+            <option value="Sugestoes">Sugestoes</option>
+            <option value="Reclamacao">Reclamacao</option>
+        </select><p></p>
+        <label>Gênero: </label>
+        <input type="radio" name="genero" value="masculino">Masculino
+        <input type="radio" name="genero" value="feminino">Feminino
+        <input type="radio" name="genero" value="pnd">Prefiro não dizer<p></p>
+        <label>Passa tempo: </label>
+        <input type="checkbox" name="passa_tempo" value="praia">Praia
+        <input type="checkbox" name="passa_tempo" value="futebol">Futebol
+        <input type="checkbox" name="passa_tempo" value="festivais">Festivais
+        <input type="checkbox" name="passa_tempo" value="baladas">Baladas
+        <input type="checkbox" name="passa_tempo" value="bilhar">Bilhar<p></p>
+        <label>Comentarios:</label>
+        <textarea name="mensagem">Escreva seu comentario aqui...</textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Excluir</button>
+    </form>
+</body>
+
+
+
+</html>

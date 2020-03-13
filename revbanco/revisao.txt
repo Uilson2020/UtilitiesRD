@@ -1,0 +1,371 @@
+
+Setting environment for using XAMPP for Windows.
+Treinamento@RD723932 c:\xampp2
+# cd Revisao
+O sistema não pode encontrar o caminho especificado.
+
+Treinamento@RD723932 c:\xampp2
+# cd Revisao;
+O sistema não pode encontrar o caminho especificado.
+
+Treinamento@RD723932 c:\xampp2
+# cd ..
+
+Treinamento@RD723932 c:\
+# cd C:\Users\Treinamento\Desktop\Revisao
+
+Treinamento@RD723932 C:\Users\Treinamento\Desktop\Revisao
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.11-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database banco;
+Query OK, 1 row affected (0.056 sec)
+
+MariaDB [(none)]> use banco;
+Database changed
+MariaDB [banco]> source create.sql;
+Query OK, 0 rows affected (0.071 sec)
+
+Query OK, 0 rows affected (0.013 sec)
+
+MariaDB [banco]> source insert.sql;
+Query OK, 1 row affected (0.023 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [banco]> source insert_endereco.sql;
+Query OK, 1 row affected (0.010 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.001 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [banco]> select * from banco;
+ERROR 1146 (42S02): Table 'banco.banco' doesn't exist
+MariaDB [banco]> show databases;
++---------------------+
+| Database            |
++---------------------+
+| banco               |
+| information_schema  |
+| linhas_ferroviarias |
+| mydb                |
+| mysql               |
+| osmakers            |
+| pano_online         |
+| performance_schema  |
+| phpmyadmin          |
+| test                |
++---------------------+
+10 rows in set (0.058 sec)
+
+MariaDB [banco]> select * from tb_endereco_cliente;
++------------+--------------------------+-------------------+-------------------+-------------------+
+| id_cliente | ds_rua_cliente           | ds_bairro_cliente | ds_cidade_cliente | sg_estado_cliente |
++------------+--------------------------+-------------------+-------------------+-------------------+
+|          1 | AVENIDA PAULISTA, 1300   | JARDIM PAULISTANO | SAO PAULO         | SP                |
+|          2 | RUA MARQUES DE ITU, 643  | VILA BUARQUE      | SAO PAULO         | SP                |
+|          3 | AVENIDA DR. ARNALDO, 600 | PINHEIROS         | SAO PAULO         | SP                |
+|          4 | RUA DA CONSOLACAO, 1290  | CONSOLACAO        | SAO PAULO         | SP                |
+|          5 | RUA MINAS GERAIS, 616    | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
+|          6 | RUA SERGIPE, 800         | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
++------------+--------------------------+-------------------+-------------------+-------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
++------------+----------------+----------------+
+10 rows in set (0.000 sec)
+
+MariaDB [banco]> insert into tb_cliente (nm_cliente, nr_cpf_cliente) values ('Uilson', '56766786776');
+Query OK, 1 row affected (0.010 sec)
+
+MariaDB [banco]> insert into tb_cliente (nm_cliente, nr_cpf_cliente) values ('Renata', '42035653454');
+Query OK, 1 row affected (0.010 sec)
+
+MariaDB [banco]> show tables;
++---------------------+
+| Tables_in_banco     |
++---------------------+
+| tb_cliente          |
+| tb_endereco_cliente |
++---------------------+
+2 rows in set (0.001 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
+|         11 | Uilson         | 56766786776    |
+|         12 | Renata         | 42035653454    |
++------------+----------------+----------------+
+12 rows in set (0.000 sec)
+
+MariaDB [banco]> delete from tb_cliente where nm_cliente = 'Uilson';
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [banco]> insert into tb_cliente (nm_cliente) values ('BOB ESPONJA');
+Query OK, 1 row affected (0.010 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
+|         12 | Renata         | 42035653454    |
+|         13 | BOB ESPONJA    | NULL           |
++------------+----------------+----------------+
+12 rows in set (0.000 sec)
+
+MariaDB [banco]> insert into tb_cliente (nr_cpf_cliente) values ('56766786776');
+Query OK, 1 row affected, 1 warning (0.009 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
+|         12 | Renata         | 42035653454    |
+|         13 | BOB ESPONJA    | NULL           |
+|         14 |                | 56766786776    |
++------------+----------------+----------------+
+13 rows in set (0.000 sec)
+
+MariaDB [banco]> delete from tb_cliente where nr_cpf_cliente = '56766786776';
+Query OK, 1 row affected (0.054 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
+|         12 | Renata         | 42035653454    |
+|         13 | BOB ESPONJA    | NULL           |
++------------+----------------+----------------+
+12 rows in set (0.000 sec)
+
+MariaDB [banco]> insert into tb_cliente (nr_cpf_cliente) values ('65544511189');
+Query OK, 1 row affected, 1 warning (0.010 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
+|         12 | Renata         | 42035653454    |
+|         13 | BOB ESPONJA    | NULL           |
+|         15 |                | 65544511189    |
++------------+----------------+----------------+
+13 rows in set (0.000 sec)
+
+MariaDB [banco]> delete from tb_cliente where nr_cpf_cliente = '65544511189';
+Query OK, 1 row affected (0.009 sec)
+
+MariaDB [banco]> select * from tb_cliente;
++------------+----------------+----------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente |
++------------+----------------+----------------+
+|          1 | HUGUINHO       | 81926701378    |
+|          2 | ZEZINHO        | 02856256251    |
+|          3 | LUIZINHO       | 99987267265    |
+|          4 | CAPITAO BOEING | 93691740111    |
+|          5 | PATO DONALD    | 56423198766    |
+|          6 | GASTAO         | 32183892644    |
+|          7 | ZE COLMEIA     | 00183792321    |
+|          8 | ZE BUSCAPE     | 22287610938    |
+|          9 | WALLY GATOR    | 66667298611    |
+|         10 | GEORGE JETSON  | 91273801780    |
+|         12 | Renata         | 42035653454    |
+|         13 | BOB ESPONJA    | NULL           |
++------------+----------------+----------------+
+12 rows in set (0.000 sec)
+
+MariaDB [banco]> select * from tb_cliente c inner join tb_endereco_cliente ec on c.id_cliente = ec.id_cliente;
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente | id_cliente | ds_rua_cliente           | ds_bairro_cliente | ds_cidade_cliente | sg_estado_cliente |
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+|          1 | HUGUINHO       | 81926701378    |          1 | AVENIDA PAULISTA, 1300   | JARDIM PAULISTANO | SAO PAULO         | SP                |
+|          2 | ZEZINHO        | 02856256251    |          2 | RUA MARQUES DE ITU, 643  | VILA BUARQUE      | SAO PAULO         | SP                |
+|          3 | LUIZINHO       | 99987267265    |          3 | AVENIDA DR. ARNALDO, 600 | PINHEIROS         | SAO PAULO         | SP                |
+|          4 | CAPITAO BOEING | 93691740111    |          4 | RUA DA CONSOLACAO, 1290  | CONSOLACAO        | SAO PAULO         | SP                |
+|          5 | PATO DONALD    | 56423198766    |          5 | RUA MINAS GERAIS, 616    | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
+|          6 | GASTAO         | 32183892644    |          6 | RUA SERGIPE, 800         | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+6 rows in set (0.009 sec)
+
+MariaDB [banco]> select * from tb_cliente c left join tb_endereco_cliente ec on c.id_cliente = ec.id_cliente;
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente | id_cliente | ds_rua_cliente           | ds_bairro_cliente | ds_cidade_cliente | sg_estado_cliente |
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+|          1 | HUGUINHO       | 81926701378    |          1 | AVENIDA PAULISTA, 1300   | JARDIM PAULISTANO | SAO PAULO         | SP                |
+|          2 | ZEZINHO        | 02856256251    |          2 | RUA MARQUES DE ITU, 643  | VILA BUARQUE      | SAO PAULO         | SP                |
+|          3 | LUIZINHO       | 99987267265    |          3 | AVENIDA DR. ARNALDO, 600 | PINHEIROS         | SAO PAULO         | SP                |
+|          4 | CAPITAO BOEING | 93691740111    |          4 | RUA DA CONSOLACAO, 1290  | CONSOLACAO        | SAO PAULO         | SP                |
+|          5 | PATO DONALD    | 56423198766    |          5 | RUA MINAS GERAIS, 616    | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
+|          6 | GASTAO         | 32183892644    |          6 | RUA SERGIPE, 800         | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
+|          7 | ZE COLMEIA     | 00183792321    |       NULL | NULL                     | NULL              | NULL              | NULL              |
+|          8 | ZE BUSCAPE     | 22287610938    |       NULL | NULL                     | NULL              | NULL              | NULL              |
+|          9 | WALLY GATOR    | 66667298611    |       NULL | NULL                     | NULL              | NULL              | NULL              |
+|         10 | GEORGE JETSON  | 91273801780    |       NULL | NULL                     | NULL              | NULL              | NULL              |
+|         12 | Renata         | 42035653454    |       NULL | NULL                     | NULL              | NULL              | NULL              |
+|         13 | BOB ESPONJA    | NULL           |       NULL | NULL                     | NULL              | NULL              | NULL              |
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+12 rows in set (0.001 sec)
+
+MariaDB [banco]> select * from tb_cliente c right join tb_endereco_cliente ec on c.id_cliente = ec.id_cliente;
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+| id_cliente | nm_cliente     | nr_cpf_cliente | id_cliente | ds_rua_cliente           | ds_bairro_cliente | ds_cidade_cliente | sg_estado_cliente |
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+|          1 | HUGUINHO       | 81926701378    |          1 | AVENIDA PAULISTA, 1300   | JARDIM PAULISTANO | SAO PAULO         | SP                |
+|          2 | ZEZINHO        | 02856256251    |          2 | RUA MARQUES DE ITU, 643  | VILA BUARQUE      | SAO PAULO         | SP                |
+|          3 | LUIZINHO       | 99987267265    |          3 | AVENIDA DR. ARNALDO, 600 | PINHEIROS         | SAO PAULO         | SP                |
+|          4 | CAPITAO BOEING | 93691740111    |          4 | RUA DA CONSOLACAO, 1290  | CONSOLACAO        | SAO PAULO         | SP                |
+|          5 | PATO DONALD    | 56423198766    |          5 | RUA MINAS GERAIS, 616    | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
+|          6 | GASTAO         | 32183892644    |          6 | RUA SERGIPE, 800         | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
++------------+----------------+----------------+------------+--------------------------+-------------------+-------------------+-------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [banco]> select * from tb_cliente c right join id_cliente c on tb_endereco_cliente ec = ec.id_cliente;
+ERROR 1066 (42000): Not unique table/alias: 'c'
+MariaDB [banco]> select * from tb_cliente c right join id_cliente c on tb_endereco_cliente ec = ec.id_cliente;
+ERROR 1066 (42000): Not unique table/alias: 'c'
+MariaDB [banco]>
+MariaDB [banco]>
+MariaDB [banco]> select * from tb_cliente c right join c.id_cliente on tb_endereco_cliente ec = ec.id_cliente;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ec = ec.id_cliente' at line 1
+MariaDB [banco]> select * from tb_cliente c right join c.id_cliente on tb_endereco_cliente ec = tb_endereco_cliente;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ec = tb_endereco_cliente' at line 1
+MariaDB [banco]> select * from tb_cliente c right join c.id_cliente on tb_endereco_cliente ec = id.tb_endereco_cliente;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ec = id.tb_endereco_cliente' at line 1
+MariaDB [banco]> select * from endereco_cliente;
+ERROR 1146 (42S02): Table 'banco.endereco_cliente' doesn't exist
+MariaDB [banco]> select * from tb_endereco_cliente;
++------------+--------------------------+-------------------+-------------------+-------------------+
+| id_cliente | ds_rua_cliente           | ds_bairro_cliente | ds_cidade_cliente | sg_estado_cliente |
++------------+--------------------------+-------------------+-------------------+-------------------+
+|          1 | AVENIDA PAULISTA, 1300   | JARDIM PAULISTANO | SAO PAULO         | SP                |
+|          2 | RUA MARQUES DE ITU, 643  | VILA BUARQUE      | SAO PAULO         | SP                |
+|          3 | AVENIDA DR. ARNALDO, 600 | PINHEIROS         | SAO PAULO         | SP                |
+|          4 | RUA DA CONSOLACAO, 1290  | CONSOLACAO        | SAO PAULO         | SP                |
+|          5 | RUA MINAS GERAIS, 616    | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
+|          6 | RUA SERGIPE, 800         | HIGIEN├ôPOLIS      | SAO PAULO         | SP                |
++------------+--------------------------+-------------------+-------------------+-------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [banco]> select ds_bairro_cliente from tb_endereco_cliente group by ds_bairro;
+ERROR 1054 (42S22): Unknown column 'ds_bairro' in 'group statement'
+MariaDB [banco]> select ds_bairro_cliente from tb_endereco_cliente group by ds_bairro_cliente;
++-------------------+
+| ds_bairro_cliente |
++-------------------+
+| CONSOLACAO        |
+| HIGIEN├ôPOLIS      |
+| JARDIM PAULISTANO |
+| PINHEIROS         |
+| VILA BUARQUE      |
++-------------------+
+5 rows in set (0.000 sec)
+
+MariaDB [banco]> select ds_bairro_cliente from tb_endereco_cliente group by ds_bairro_cliente id_cliente;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_cliente' at line 1
+MariaDB [banco]> select ds_bairro_cliente from tb_endereco_cliente group by ds_bairro_cliente, id_cliente;
++-------------------+
+| ds_bairro_cliente |
++-------------------+
+| CONSOLACAO        |
+| HIGIEN├ôPOLIS      |
+| HIGIEN├ôPOLIS      |
+| JARDIM PAULISTANO |
+| PINHEIROS         |
+| VILA BUARQUE      |
++-------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [banco]>

@@ -1,0 +1,46 @@
+
+body{
+    background-color: blueviolet;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu{
+    height: 30px;
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.fotos{
+    background-color: rgb(25, 26, 27);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-style: solid;
+    height: 300px;
+}
+
+#f{
+    border-style: solid;
+    height: 298px;
+    background-color: dodgerblue;   
+}
+
+#g{
+    border-style: solid;
+    height: 298px;
+    background-color: dodgerblue; 
+
+}
+
+.img2{
+    max-width: 1200px;
+}

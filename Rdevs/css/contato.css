@@ -1,0 +1,21 @@
+body{
+    background-color: blueviolet;
+}
+
+a {
+    text-decoration: rgb(47, 61, 139);
+     
+}
+
+input {
+    background-color: #aca6a6;
+}
+
+input:focus {
+    background-color: #000000;
+  }
+  
+  
+textarea{
+    resize: vertical;
+}

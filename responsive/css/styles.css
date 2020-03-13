@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(0, 107, 179);
+    
+}
+
+h1 {
+    border-style: solid;
+    border-color: yellow;
+    background-color: rgb(63, 226, 48);
+    max-width: 1200px;
+    text-align: center;
+}
+.container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    max-width: 1200px;
+    border-style: solid;
+    border-color:white;
+} 
+
+#a{
+
+    background-color: tomato;
+    width: 20.88%;
+    border-style: solid;
+    border-color: rgb(241, 245, 234);
+}
+
+#b{
+    background-color: green;
+    width: 66.66%;
+    border-style: solid;
+    border-color: indigo;
+    margin-left: 2.08%;
+    margin-right: 2.08%;
+}
+
+#c{
+    
+    background-color: purple;
+    width: 8.33%;
+    border-style: solid;
+    border-color: saddlebrown;
+}
+
+h2{
+    font-size: 2vw;
+}

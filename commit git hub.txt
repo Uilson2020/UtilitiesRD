@@ -1,0 +1,44 @@
+ create mode 100644 src/Exericio1.java
+ create mode 100644 src/Main.java
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git remote add origin https://github.com/Uilson2020/ArrayList-HashSet.git
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git commit -m "list e set"
+On branch master
+nothing to commit, working tree clean
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git add .
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)
+$ git push origin master
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (15/15), 4.89 KiB | 1.63 MiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0)
+To https://github.com/Uilson2020/ArrayList-HashSet.git
+ * [new branch]      master -> master
+
+RD723932+Treinamento@RD723932 MINGW64 ~/IdeaProjects/ArrayList (master)

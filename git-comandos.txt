@@ -1,0 +1,364 @@
+Microsoft Windows [versão 10.0.18363.592]
+(c) 2019 Microsoft Corporation. Todos os direitos reservados.
+C:\Users\Treinamento\IdeaProjects\Banco>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+C:\Users\Treinamento\IdeaProjects\Banco>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é 0E84-982D
+
+ Pasta de C:\Users\Treinamento\IdeaProjects\Banco
+
+12/02/2020  09:13    <DIR>          .
+12/02/2020  09:13    <DIR>          ..
+12/02/2020  11:58    <DIR>          .idea
+12/02/2020  08:54               437 Banco.iml
+12/02/2020  09:13    <DIR>          out
+12/02/2020  09:05    <DIR>          src
+               1 arquivo(s)            437 bytes
+               5 pasta(s)   202.669.821.952 bytes disponíveis
+
+C:\Users\Treinamento\IdeaProjects\Banco>git init
+Initialized empty Git repository in C:/Users/Treinamento/IdeaProjects/Banco/.git/
+
+C:\Users\Treinamento\IdeaProjects\Banco>git add .
+
+C:\Users\Treinamento\IdeaProjects\Banco>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .idea/description.html
+        new file:   .idea/encodings.xml
+        new file:   .idea/misc.xml
+        new file:   .idea/modules.xml
+        new file:   .idea/project-template.xml
+        new file:   .idea/uiDesigner.xml
+        new file:   .idea/workspace.xml
+        new file:   Banco.iml
+        new file:   out/production/Banco/META-INF/Banco.kotlin_module
+        new file:   out/production/Banco/com/company/Cheque.class
+        new file:   out/production/Banco/com/company/Cliente.class
+        new file:   out/production/Banco/com/company/Conta.class
+        new file:   out/production/Banco/com/company/ContaCorrente.class
+        new file:   out/production/Banco/com/company/ContaPoupanca.class
+        new file:   out/production/Banco/com/company/Main.class
+        new file:   src/com/company/Cheque.java
+        new file:   src/com/company/Cliente.java
+        new file:   src/com/company/Conta.java
+        new file:   src/com/company/ContaCorrente.java
+        new file:   src/com/company/ContaPoupanca.java
+        new file:   src/com/company/Main.java
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git add remote origin https://github.com/Uilson2020/BancoSantander.git
+fatal: pathspec 'remote' did not match any files
+
+C:\Users\Treinamento\IdeaProjects\Banco>git remote add origin https://github.com/Uilson2020/BancoSantander.git
+
+C:\Users\Treinamento\IdeaProjects\Banco>git commit -m "envio exercicio"
+[master (root-commit) 3da00f1] envio exercicio
+ Committer: Treinamento <Treinamento@RD723932.raiadrogasil.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 21 files changed, 514 insertions(+)
+ create mode 100644 .idea/description.html
+ create mode 100644 .idea/encodings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/project-template.xml
+ create mode 100644 .idea/uiDesigner.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 Banco.iml
+ create mode 100644 out/production/Banco/META-INF/Banco.kotlin_module
+ create mode 100644 out/production/Banco/com/company/Cheque.class
+ create mode 100644 out/production/Banco/com/company/Cliente.class
+ create mode 100644 out/production/Banco/com/company/Conta.class
+ create mode 100644 out/production/Banco/com/company/ContaCorrente.class
+ create mode 100644 out/production/Banco/com/company/ContaPoupanca.class
+ create mode 100644 out/production/Banco/com/company/Main.class
+ create mode 100644 src/com/company/Cheque.java
+ create mode 100644 src/com/company/Cliente.java
+ create mode 100644 src/com/company/Conta.java
+ create mode 100644 src/com/company/ContaCorrente.java
+ create mode 100644 src/com/company/ContaPoupanca.java
+ create mode 100644 src/com/company/Main.java
+
+C:\Users\Treinamento\IdeaProjects\Banco>git push origin master
+To https://github.com/Uilson2020/BancoSantander.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Uilson2020/BancoSantander.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 863 bytes | 45.00 KiB/s, done.
+From https://github.com/Uilson2020/BancoSantander
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git push origin master
+To https://github.com/Uilson2020/BancoSantander.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Uilson2020/BancoSantander.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull origin master
+From https://github.com/Uilson2020/BancoSantander
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Treinamento\IdeaProjects\Banco>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch
+* master
+
+C:\Users\Treinamento\IdeaProjects\Banco>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/vcs.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Treinamento\IdeaProjects\Banco>
+C:\Users\Treinamento\IdeaProjects\Banco>
+C:\Users\Treinamento\IdeaProjects\Banco>
+C:\Users\Treinamento\IdeaProjects\Banco>
+C:\Users\Treinamento\IdeaProjects\Banco>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git push origin master
+To https://github.com/Uilson2020/BancoSantander.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Uilson2020/BancoSantander.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull origin master
+From https://github.com/Uilson2020/BancoSantander
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Treinamento\IdeaProjects\Banco>git push origin master
+To https://github.com/Uilson2020/BancoSantander.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Uilson2020/BancoSantander.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 573 bytes | 22.00 KiB/s, done.
+From https://github.com/Uilson2020/BancoSantander
+   2443e53..256bc4e  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch
+* master
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch --set-upstream-to=origin/master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\Treinamento\IdeaProjects\Banco>git push
+To https://github.com/Uilson2020/BancoSantander.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Uilson2020/BancoSantander.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Treinamento\IdeaProjects\Banco>git pull
+fatal: refusing to merge unrelated histories
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch
+* master
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch dev
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch
+  dev
+* master
+
+C:\Users\Treinamento\IdeaProjects\Banco>git checkout dev
+Switched to branch 'dev'
+A       .idea/vcs.xml
+M       .idea/workspace.xml
+
+C:\Users\Treinamento\IdeaProjects\Banco>git branch
+* dev
+  master
+
+C:\Users\Treinamento\IdeaProjects\Banco>git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .idea/vcs.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+
+
+C:\Users\Treinamento\IdeaProjects\Banco>git push
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev
+
+
+C:\Users\Treinamento\IdeaProjects\Banco> git push --set-upstream origin dev
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (33/33), 9.91 KiB | 2.48 MiB/s, done.
+Total 33 (delta 1), reused 0 (delta 0)
+                              C:\Users\Treinamento\IdeaProjects\Banco>
+C:\Users\Treinamento\IdeaProjects\Banco>git branch
+* dev
+  master
+
+C:\Users\Treinamento\IdeaProjects\Banco>
+
+
+

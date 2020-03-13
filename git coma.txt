@@ -1,0 +1,85 @@
+git checkout -b dev // criando uma branch com o nome dev
+git pull origin master // passando os valores 
+git add.
+
+
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop
+$ git clone https://github.com/SamuWesll/meu_pano_online.git
+Cloning into 'meu_pano_online'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 11 (delta 1), reused 10 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), 24.51 KiB | 929.00 KiB/s, done.
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop
+$ cd meu_pano_online
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (master)
+$ git checkout dev
+Switched to a new branch 'dev'
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (master)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (dev)
+$ git checkout -b uilson
+Switched to a new branch 'uilson'
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (uilson)
+$ git pull origin dev
+From https://github.com/SamuWesll/meu_pano_online
+ * branch            dev        -> FETCH_HEAD
+Already up to date.
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (uilson)
+$ gi add .
+bash: gi: command not found
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (uilson)
+$ git add .
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (uilson)
+$ git commit -m "minha branch"
+[uilson e381e06] minha branch
+ Committer: Treinamento <Treinamento@RD723932.raiadrogasil.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (uilson)
+$ git push origin uilson
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 408 bytes | 408.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'uilson' on GitHub by visiting:
+remote:      https://github.com/SamuWesll/meu_pano_online/pull/new/uilson
+remote:
+To https://github.com/SamuWesll/meu_pano_online.git
+ * [new branch]      uilson -> uilson
+
+RD723932+Treinamento@RD723932 MINGW64 ~/Desktop/meu_pano_online (uilson)
+ 

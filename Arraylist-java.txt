@@ -1,0 +1,18 @@
+package arrayslist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListsArray {
+	public static void main (String[] args) {
+		List<String> lista = new ArrayList<>();
+		lista.add("joao");
+		lista.add("fabio");
+		
+		for(int i=0; i < lista.size(); i++) {
+			System.out.println(lista.get(i));
+	
+		}	
+
+	}
+}

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    
+}
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ---begin header--- */
+header {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.search input {
+    height: 25px;
+    padding-left: 5px;
+}
+
+.search button {
+    background-color: mediumslateblue;
+    color: mintcream;
+    border: none;
+    height: 31px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: darkcyan;
+}
+
+.login a {
+    color: rgb(106, 199, 118);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:before {
+    content: "";
+    background-image: url('../images/person.png');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -26px;
+    margin-top: -4px;
+    background-size: 24px;
+
+}
+/* ---end header--- */
+
+
+
+/* anotacões  */
+/* o (*) seleciona todos elementos */
+/* o (margin) INTERNO - distancia as laterais das extremidades da tela */
+/* o (padding) EXTERNO - é a distância do preenchimento dos elementos */
+/* o (space between) da espaco entre as laterais da tela */
+/* o (opacity) clareia a cor do elemento */
+/* o (line-through) passa uma linha no texto */
